@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- Declaración que especifica al navegador que el documento utiliza el estándar HTML5 -->
+<html lang="en">
+<!-- Elemento raíz que envuelve todo el documento (lang="en" establece el idioma en inglés) -->
+
+<head>
+    <!-- Contenedor para metadatos, título del sitio y configuraciones de la página -->
+
+    <!-- Define la codificación UTF-8 para procesar correctamente acentos y caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- Configuración para asegurar una correcta visualización en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Tipos de listas en HTML</title>
+</head>
+
+<body>
+    <!-- Cuerpo de la página: abarca todos los elementos visuales que se muestran al usuario -->
+
+    <!-- Encabezado principal del sitio (nivel 1) -->
+    <h1>Tipos de listas</h1>
+
+    <!-- Subtítulo de nivel 2 -->
+    <h2>Listas ordenadas</h2>
+    <!-- Párrafo explicativo -->
+    <p>Una lista ordenada es una serie de elementos los cuales 
+        tendran una numeracion de acuerdo al numeros de elementos.
+    </p>
+
+    <!-- 
+      LISTA ORDENADA (<ol> - Ordered List):
+      Presenta los elementos enumerados secuencialmente (1, 2, 3...).
+      - <ol>: Contenedor principal de la lista ordenada.
+      - <li> (List Item): Cada uno de los elementos o renglones individuales dentro de la lista.
+    -->
+    <ol>
+        <li>Luna Arias </li>
+        <li>Franco Andrea</li>
+        <li>Granados Evelyn</li>
+    </ol>
+
+    <!-- Subtítulo de nivel 2 -->
+    <h2>Listas no ordenadas</h2>
+    <!-- Párrafo explicativo -->
+    <p>Las listas no ordenadas no utilizan ninguna numeracion delante 
+        de cada item sino un pequeño elemento grafico
+    </p>
+
+    <!-- 
+      LISTA NO ORDENADA (<ul> - Unordered List):
+      Presenta los elementos acompañados por viñetas gráficos (puntos/círculos) sin un orden numérico.
+      - <ul>: Contenedor principal de la lista no ordenada.
+      - <li>: Cada elemento individual dentro de la lista.
+    -->
+    <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Python</li>
+    </ul>
+
+    <!-- Subtítulo de nivel 2 -->
+    <h2>Lista de definiciones</h2>
+    <!-- Párrafo explicativo -->
+    <p>Se utiliza para asociar un termino y la definicion del mismo</p>
+
+    <!-- 
+      LISTA DE DEFINICIÓN O DESCRIPCIÓN (<dl> - Description List):
+      Estructura conceptos junto con su explicación o significado.
+      - <dl>: Contenedor de la lista de descripción.
+      - <dt> (Description Term): Especifica el término o concepto a definir.
+      - <dd> (Description Details): Proporciona la explicación, definición o detalle del término previo.
+    -->
+    <dl>
+        <!-- Primer término a definir -->
+        <dt>C++</dt>
+        <!-- Explicación o significado del primer término -->
+        <dd>
+            Es un lenguaje de programacion, diseñado a mediados de los años
+            1980 como extension del lenguaje de programacion C.
+        </dd>
+
+        <!-- Segundo término -->
+        <dt>Java</dt>
+        <!-- Explicación del segundo término -->
+        <dd>
+            Es un lenguaje de programacion orientado a objetos desarrollado
+            por Sun Microsystem a principios de los 90.
+        </dd>
+
+        <!-- Tercer término -->
+        <dt>JavaScript</dt>
+        <!-- Explicación del tercer término -->
+        <dd>
+            Es un lenguaje interpretado, es decir que no requiere compilacion,
+            utilizado principalmente en paginas web, con una sintaxis similar
+            al lenguaje de programacion C.
+        </dd>
+    </dl>
+
+    <!-- Subtítulo de nivel 2 -->
+    <h2>Listas anidadas</h2>
+    <!-- Párrafo explicativo -->
+    <p>En HTML nos permite insertar una lista dentro de otra lista, se pueden
+        anidar diferentes tipos de lista de acuerdo al requerimiento
+    </p>
+
+    <!-- 
+      LISTAS ANIDADAS:
+      Poner una lista dentro del elemento <li> de otra lista.
+      En este caso, una lista no ordenada (<ul>) está insertada dentro de los elementos <li> de una lista ordenada (<ol>).
+    -->
+    <ol>
+        <!-- Elemento principal 1 -->
+        <li>Argentina
+            <!-- Lista secundaria anidada dentro del primer <li> -->
+            <ul>
+                <li>Buenos aires</li>
+                <li>La plata</li>
+                <li>Mendoza</li>
+            </ul>
+        </li>
+
+        <!-- Elemento principal 2 -->
+        <li>España
+            <!-- Lista secundaria anidada dentro del segundo <li> -->
+            <ul>
+                <li>Barcelona</li>
+                <li>Madrid</li>
+                <li>Sevilla</li>
+            </ul>
+        </li>
+
+        <!-- Elemento principal 3 -->
+        <li>Mexico
+            <!-- Lista secundaria anidada dentro del tercer <li> -->
+            <ul>
+                <li>Chihuahua</li>
+                <li>Cd. Juarez</li>
+                <li>Hermosillo</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
