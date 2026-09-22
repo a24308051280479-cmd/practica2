@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Declaración que indica al navegador que el documento utiliza el estándar HTML5 -->
+<html lang="en">
+<!-- Elemento raíz de la página (atributo lang="en" establece el idioma inglés) -->
+
+<head>
+    <!-- Contenedor para metadatos, título y configuraciones no visibles directamente en la página -->
+
+    <!-- Define la codificación UTF-8 para interpretar correctamente acentos y caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- Configuración para asegurar una correcta escala y visualización en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que se muestra en la pestaña del navegador -->
+    <title>Enlaces en HTML</title>
+</head>
+
+<body>
+    <!-- Cuerpo del documento: contiene los elementos visibles para el usuario -->
+
+    <!-- Subtítulo principal de nivel 2 -->
+    <h2>Tipos de enlaces en HTML</h2>
+
+    <!-- Párrafo que utiliza <strong> para destacar el texto en negrita -->
+    <p><strong>Enlaces/Hipervinculos a otra pagina del
+         mismo sitio.
+    </strong></p>
+
+    <!-- 
+      ENLACES INTERNOS (rutas relativas a archivos dentro del mismo proyecto):
+      - <a>: Etiqueta para crear hipervínculos.
+      - href: Atributo que especifica la ruta o destino del enlace.
+      - target: Define dónde se abrirá el documento vinculado.
+    -->
+
+    <!-- Enlace simple sin atributo target (por defecto se abre en la misma pestaña) -->
+    <a href="1. Hola_mundo.html">1. Hola Mundo</a><br>
+
+    <!-- target="_self": Abre el enlace en la misma pestaña/ventana (comportamiento predeterminado) -->
+    <a href="2. Encabezados.html" target="_self">
+        2. Encabezados</a><br>
+
+    <!-- target="_blank": Abre el enlace en una NUEVA pestaña o ventana del navegador -->
+    <a href="3. Parrafos.html" target="_blank">
+        3. Parrafos</a><br>
+
+    <!-- target="_parent": Abre el enlace en el marco/frame padre (útil si se usan marcos o iframes) -->
+    <a href="4. Salto de linea.html" target="_parent">
+        4. Salto de linea</a><br>
+
+    <!-- target="_top": Abre el enlace en el cuerpo completo de la ventana, cancelando todos los marcos/iframes -->
+    <a href="5. Enfatizado.html" target="_top">
+        5. Enfatizado</a><br>
+
+    <!-- Encabezado de sección para enlaces externos -->
+    <p><strong>Enlaces/Hipervinculos a sitios externos
+    </strong></p>
+
+    <!-- 
+      ENLACES EXTERNOS (rutas absolutas hacia sitios web en Internet):
+      Requieren la URL completa incluyendo el protocolo (https://)
+    -->
+
+    <!-- Enlace externo simple -->
+    <a href="https://www.google.com/">Google</a><br>
+
+    <!-- Abre YouTube en la misma pestaña -->
+    <a href="https://www.youtube.com/" target="_self">
+        YouTube</a><br>
+
+    <!-- Abre Facebook en una pestaña nueva -->
+    <a href="https://www.facebook.com/" target="_blank">
+        FaceBook</a><br>
+
+    <!-- Abre Wikipedia en el marco padre -->
+    <a href="https://www.wikipedia.com/" target="_parent">
+        WikiPedia</a><br>
+
+    <!-- Abre Yahoo en la ventana completa -->
+    <a href="https://www.espanol.yahoo.com/" target="_top">
+        Yahoo!</a><br>
+</body>
+
+</html>
